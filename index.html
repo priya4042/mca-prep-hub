@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ZiFIQA0JkMXzX4iAWLPg540PwX3fDacS4bGSpoXNn5E='; style-src 'self' 'sha256-bcILfksIHRnFv+3ZmqGluhRufILzq578Ih6nEBZ6h5M='; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCA + Google-Level Prep Hub</title>
+    <meta name="description" content="MCA CET + NIMCET entrance and software-engineer interview preparation: subjects, priorities, resources and a practice question bank." />
+    <script>
+      // Set theme + accent before first paint to avoid a flash of the wrong theme.
+      (function () {
+        try {
+          var m = localStorage.getItem('mca_theme_mode') || 'auto'
+          var a = localStorage.getItem('mca_theme_accent') || 'indigo'
+          var dark = m === 'auto'
+            ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            : m === 'dark'
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+          document.documentElement.dataset.accent = a
+        } catch (e) {}
+      })()
+    </script>
+    <style>
+      /* loader shown inside #root until React mounts */
+      .boot { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: #f6f7fb; color: #64748b; font: 500 15px 'Segoe UI', system-ui, -apple-system, Arial, sans-serif; --boot-a: #4f46e5; --boot-b: #7c3aed; --boot-track: #e8ebf1; }
+      :root[data-accent="ocean"] .boot { --boot-a: #2563eb; --boot-b: #06b6d4; }
+      :root[data-accent="emerald"] .boot { --boot-a: #0d9488; --boot-b: #0891b2; }
+      :root[data-accent="grape"] .boot { --boot-a: #7c3aed; --boot-b: #db2777; }
+      :root[data-accent="sunset"] .boot { --boot-a: #f97316; --boot-b: #e11d48; }
+      :root[data-theme="dark"] .boot { background: #0f1117; color: #9aa3b2; --boot-track: #262b38; }
+      html, body { margin: 0; }
+      .boot-ring { width: 46px; height: 46px; box-sizing: border-box; border-radius: 50%; border: 4px solid var(--boot-track); border-top-color: var(--boot-a); border-right-color: var(--boot-b); animation: boot-spin .85s linear infinite; }
+      .boot-text::after { content: '...'; }
+      @keyframes boot-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { .boot-ring { animation: none; border-color: var(--boot-a); border-right-color: var(--boot-track); } }
+    </style>
+    <script type="module" crossorigin src="./assets/index-S6fj1g-g.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-MKhp2X51.css">
+  </head>
+  <body>
+    <div id="root"><div class="boot" role="status" aria-live="polite"><span class="boot-ring" aria-hidden="true"></span><span class="boot-text">Loading MCA Prep Hub</span></div></div>
+  </body>
+</html>
